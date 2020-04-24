@@ -1,0 +1,91 @@
+/* universal */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&display=swap');
+* {
+	margin:0;
+	padding:0;
+	vertical-align:top;
+}
+
+/* background */
+body {
+	background-image:url("background.jpg");
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:cover;
+	background-attachment:fixed;
+}
+
+/* tables and cells */
+table {
+	margin-top:40px;
+	margin-bottom:40px;
+	width:60%;
+	margin-left:auto; 
+    margin-right:auto;
+	border:0px;
+	table-layout:fixed;
+}
+td {
+	background-color:#111111aa;
+}
+
+/* titles */
+h1, h2 {
+	font-family:IBM Plex Sans;
+	color:#FFFFFF;
+	padding:4px;
+	padding-left:12px;	
+	background-color:#111111cc;
+}
+h1 {
+	font-size:36px;
+	font-weight:500;
+}
+h2 {
+	font-size:28px;
+	font-weight:500;
+}
+
+/* paragraphs */
+p, ul {
+	font-size:14px;
+	font-family:IBM Plex Sans;
+	font-weight:400;
+	color:#FFFFFF;
+}
+.padding{
+	padding:8px;
+	padding-left:12px;
+}
+ul {
+	padding-left:36px;
+}
+
+/* images and interactivity */
+img {
+	display:block;
+	width:100%;
+}
+.link {
+	position:relative;
+	text-align:center;
+	color:#FFFFFF;
+}
+.link p {
+	font-weight:500;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+	filter:opacity(0%);
+}
+.link:hover img {
+	filter:brightness(30%);
+	transition:all 0.5s ease;
+}
+.link:hover p {
+	filter:opacity(100%);
+	transition:all 0.5s ease;
+}
+
+/* Artis Vijups 10.b */
