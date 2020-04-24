@@ -21,9 +21,14 @@ table {
 	margin-bottom:40px;
 	width:60%;
 	margin-left:auto; 
-    margin-right:auto;
+    	margin-right:auto;
 	border:0px;
 	table-layout:fixed;
+}
+@media only screen and (max-width:768px){
+	table {
+		width:100%;
+	}
 }
 td {
 	background-color:#111111aa;
