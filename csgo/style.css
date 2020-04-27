@@ -42,6 +42,7 @@ label.logo {
 	display:inline-block;
 	line-height:80px;
 	padding:0 100px;
+	padding-right:0px;
 }
 
 nav ul{
@@ -127,7 +128,7 @@ label.logo span.accent:hover{
   }
 }
 
-@media (max-width:450px){
+@media (max-width:370px){
 	label.logo{
 		display:none;
 	}
