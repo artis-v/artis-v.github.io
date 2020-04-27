@@ -1,2 +1,5 @@
 # artis-v.github.io
-Saite dažādiem web projektiem. Autors: Artis Vijups.
+Pages made by Artis Vijups.
+
+* [Informātika (interneta resursi)](https://artis-v.github.io/informatika/)
+* [S1VSK CS:GO turnīrs](https://artis-v.github.io/csgo/)
