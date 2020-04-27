@@ -38,6 +38,8 @@ nav {
 
 label.logo {
 	font-size:26px;
+	text-align:center;
+	display:inline-block;
 	line-height:80px;
 	padding:0 100px;
 }
@@ -56,6 +58,11 @@ nav ul li{
 nav ul li a{
 	color:white;
 	font-size:17px;
+}
+
+a.link {
+	color:white;
+	text-decoration:underline;
 }
 
 a.active,a:hover,label.logo span.accent:hover{
@@ -141,7 +148,7 @@ h2 {
 	font-weight:400;
 	color:white;
 	font-family:Audiowide;
-	margin-bottom:20px;
+	margin-bottom:10px;
 }
 
 h3 {
@@ -163,7 +170,7 @@ p {
 	margin-bottom:10px;
 }
 
-/* inline */
+/* divs */
 
 .inline {
 	width:395px;
@@ -173,40 +180,13 @@ p {
 	padding-right:50px;
 	vertical-align:top;
 }
-
-table {
-	border:0px;
-	
+.teamstats {
+	width:275px;
+	display:inline-block;
+	padding:25px;
+	vertical-align:top;
+	margin-bottom:5px;
 }
-
-th {
-	font-size:16px;
-	font-weight:400;
-	color:white;
-	font-family:Audiowide;
-	padding:10px;
-	text-align:center;
-}
-
-td {
-	font-size:16px;
-	font-weight:400;
-	color:white;
-	padding:10px;
-	text-align:center;
-}
-
-.sf {
-	background-color:green;
-}
-
-.qf {
-	background-color:yellow;
-}
-
-tr:hover {background-color: #f5f5f5;}
-
-
 
 
 
