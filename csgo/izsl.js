@@ -3,11 +3,11 @@ $(document).ready(function() {
         type: "GET",
         url: "https://artis-v.github.io/csgo/izsl.csv",
         dataType: "text",
-        success: function(data) {processData(data);}
+        success: function(data) {processDataIzsl(data);}
      });
 });
 
-function processData(allText) {
+function processDataIzsl(allText) {
     var allTextLines = allText.split(/\r\n|\n/);
 	var text = '';
 	var i;

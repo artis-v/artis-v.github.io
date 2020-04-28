@@ -3,11 +3,11 @@ $(document).ready(function() {
         type: "GET",
         url: "https://artis-v.github.io/csgo/liga.csv",
         dataType: "text",
-        success: function(data) {processData(data);}
+        success: function(data) {processDataLiga(data);}
      });
 });
 
-function processData(allText) {
+function processDataLiga(allText) {
     var allTextLines = allText.split(/\r\n|\n/);
 	var text = '';
 	var i;
