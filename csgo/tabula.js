@@ -1,7 +1,7 @@
 $(document).ready(function() {
     $.ajax({
         type: "GET",
-        url: "https://artis-v.github.io/csgo/liga.csv",
+        url: "https://artis-v.github.io/csgo/liga.csv?upd1",
         dataType: "text",
         success: function(data) {processDataTabula(data);}
      });
