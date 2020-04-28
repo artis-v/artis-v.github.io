@@ -1,48 +1,30 @@
 <html>
 <head>
-<title>Mači</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta charset="UTF-8">
-<link href="style.css" rel="stylesheet" type="text/css">
-<script src="https://kit.fontawesome.com/a076d05399.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-<link rel="manifest" href="favicon/manifest.json">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">
+	<title>Mači</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript">  var include = "http://artis-v.github.io/csgo/head.html"; $.get(include, function(data){ $("head").append(data); }); </script>
 </head>
-<body>
-	<nav style="position:-webkit-sticky;position:sticky;top:0">
-		<input type="checkbox" id="check">
-		<label for="check" class="checkbtn">
-			<i class="fas fa-bars"></i>
-		</label>
-		<label class="logo"><a href="index.html"><span class="accent">S1VSK CS:GO</span></a></label>
-		<ul>
-			<li><a href="index.html">Sākums</a></li>
-			<li><a href="grafiks.html" class="active">Mači</a></li>
-			<li><a href="statistika.html">Līgas tabula</a></li>
-			<li><a href="noteikumi.html">Noteikumi</a></li>
-		</ul>
-	</nav>
-	<div class="section">
-		<h2 style="padding-bottom:0px">Mači</h2>
-		<p style="padding-bottom:30px">Organizatori saglabā tiesības mainīt logus.</p>
-		<center id="liga"></center><script src="liga.js"></script>
-		<h2 style="padding-bottom:0px">Izslēgšanas turnīrs</h2>
-		<center id="izsl"></center><script src="izsl.js"></script>
-</body>
+	<body>
+		<nav style="position:-webkit-sticky;position:sticky;top:0">
+			<input type="checkbox" id="check">
+			<label for="check" class="checkbtn">
+				<i class="fas fa-bars"></i>
+			</label>
+			<label class="logo"><a href="index.html"><span class="accent">S1VSK CS:GO</span></a></label>
+			<ul>
+				<li><a href="index.html">Sākums</a></li>
+				<li><a href="grafiks.html" class="active">Mači</a></li>
+				<li><a href="statistika.html">Līgas tabula</a></li>
+				<li><a href="noteikumi.html">Noteikumi</a></li>
+			</ul>
+		</nav>
+		<div class="section">
+			<h2 style="padding-bottom:0px">Mači</h2>
+			<p style="padding-bottom:30px">Organizatori saglabā tiesības mainīt logus.</p>
+			<center id="liga"></center>
+			<h2 style="padding-top:30px; padding-bottom:30px">Izslēgšanas turnīrs</h2>
+			<center id="izsl"></center>
+			<script src="liga.js"></script>
+		</div>
+	</body>
 </html>

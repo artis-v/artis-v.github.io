@@ -8,6 +8,8 @@
 	text-decoration:none;
 	list-style:none;
 	box-sizing:border-box;
+	border-collapse:collapse;
+	border:0;
 }
 
 body {
@@ -178,20 +180,12 @@ ol, ol li {
 
 /* divs */
 
-.inline {
-	width:395px;
-	display:inline-block;
-	padding:25px;
-	padding-left:0px;
-	padding-right:50px;
-	vertical-align:top;
-}
 .teamstats {
 	width:275px;
 	display:inline-block;
 	padding:25px;
 	vertical-align:top;
-	margin-bottom:5px;
+	margin:2.5px;
 }
 
 
