@@ -1,13 +1,16 @@
+var d = new Date();
+var dt = d.getTime();
+
 $(document).ready(function() {
     $.ajax({
         type: "GET",
-        url: "https://artis-v.github.io/csgo/liga.csv",
+        url: "https://artis-v.github.io/csgo/liga.csv?"+dt,
         dataType: "text",
         success: function(data) {processDataLiga(data);}
      });
 	$.ajax({
         type: "GET",
-        url: "https://artis-v.github.io/csgo/izsl.csv",
+        url: "https://artis-v.github.io/csgo/izsl.csv?"+dt,
         dataType: "text",
         success: function(data) {processDataIzsl(data);}
      });
