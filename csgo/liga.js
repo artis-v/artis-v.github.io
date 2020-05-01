@@ -6,7 +6,7 @@ $(document).ready(function() {
         type: "GET",
         url: "https://artis-v.github.io/csgo/liga.csv?"+dt,
         dataType: "text",
-        success: function(data) {processDataLiga(data);}
+        success: function(data) {processDataLiga(data, 'all');}
      });
 	$.ajax({
         type: "GET",
@@ -16,15 +16,31 @@ $(document).ready(function() {
      });
 });
 
-function processDataLiga(allText){ document.getElementById('liga').innerHTML=processDataGeneral(allText); }
-function processDataIzsl(allText){ document.getElementById('izsl').innerHTML=processDataGeneral(allText); }
+function processDataLiga(allText, instance){ 
+	document.getElementById('liga').innerHTML=processDataGeneral(allText, instance);
+	document.getElementById('select').onchange = function() {
+		var input = document.getElementById('select').value;
+		processDataLiga(allText, input);
+	}
+}
 
-function processDataGeneral(allText) {
+function processDataIzsl(allText){
+	document.getElementById('izsl').innerHTML=processDataGeneral(allText, 'all');
+}
+
+function processDataGeneral(allText, instance) {
 	var allTextLines = allText.split(/\r\n|\n/);
 	var text = '';
 	var i;
 	for(i=0; i<allTextLines.length; i++){
 		var split = allTextLines[i].split(',');
+		if(instance!='all'){
+			if(split[0]=='f'){
+				if(split[1]!=instance&&split[3]!=instance)continue;
+			}else{
+				if(split[1]!=instance&&split[2]!=instance)continue;
+			}
+		}
 		switch(split[0]){
 			case 'f':
 				if(parseInt(split[2])+parseInt(split[4])==2){
@@ -83,8 +99,8 @@ function processDataGeneral(allText) {
 						</center>
 					</div>`;
 				break;
-				
 		}
 	}
 	return text;
+	
 }
