@@ -36,6 +36,7 @@ nav {
 	height:80px;
 	width:100%;
 	background-color:rgba(1,1,1,0.7);
+	z-index:1;
 }
 
 label.logo {
