@@ -43,8 +43,20 @@ function processDataGeneral(allText, instance) {
 		}
 		switch(split[0]){
 			case 'f':
+				var color = 'rgba(54,199,131,0.7)';
+				if(instance!='all'){
+					if(split[1]==instance){
+						if(split[2]<split[4]){
+							color = 'rgba(199,59,54,0.7)';
+						}
+					}else{
+						if(split[4]<split[2]){
+							color = 'rgba(199,59,54,0.7)';
+						}
+					}
+				}
 				if(parseInt(split[2])+parseInt(split[4])==2){
-					text+=`<div class="teamstats" style="background-color:rgba(54,199,131,0.7);">
+					text+=`<div class="teamstats" style="background-color:`+color+`;">
 							<center>
 								<h2 style="margin-bottom:0px">`+split[1]+`</h2>
 								<h3>`+split[2]+`-`+split[4]+`</h3>
@@ -54,7 +66,7 @@ function processDataGeneral(allText, instance) {
 							</center>
 						</div>`;
 				}else{
-					text+=`<div class="teamstats" style="background-color:rgba(54,199,131,0.7);">
+					text+=`<div class="teamstats" style="background-color:`+color+`;">
 							<center>
 								<h2 style="margin-bottom:0px">`+split[1]+`</h2>
 								<h3>`+split[2]+`-`+split[4]+`</h3>
@@ -77,7 +89,7 @@ function processDataGeneral(allText, instance) {
 					</div>`;
 				break;
 			case 's':
-				text+=`<div class="teamstats" style="background-color:rgba(22,112,75,0.7);">
+				text+=`<div class="teamstats" style="background-color:rgba(100,100,100,0.7);">
 						<center>
 							<h2 style="margin-bottom:0px">`+split[1]+`</h2>
 							<h3>v</h3>
