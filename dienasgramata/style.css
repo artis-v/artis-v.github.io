@@ -1,0 +1,120 @@
+/* universal */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+* {
+	margin:0;
+	padding:0;
+	vertical-align:top;
+	font-family:Rubik;
+}
+
+/* background */
+body {
+	background-image:url("background.jpg");
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:cover;
+	background-attachment:fixed;
+}
+
+/* tables and cells */
+table {
+	margin-top:40px;
+	margin-bottom:40px;
+	width:60%;
+	margin-left:auto; 
+    margin-right:auto;
+	border:0px;
+	table-layout:fixed;
+}
+@media only screen and (max-width:1100px){
+	table {
+		width:90%;
+	}
+}
+
+td {
+	background-color:rgba(17,17,17,0.65);
+}
+
+/* titles */
+h1, h2 {
+	color:#FFFFFF;
+	padding:4px;
+	padding-left:12px;	
+}
+h1 {
+	font-size:36px;
+	font-weight:500;
+}
+h2 {
+	font-size:28px;
+	font-weight:500;
+	background-color:rgba(17,17,17,0.8);
+}
+
+/* paragraphs */
+p {
+	font-size:18px;
+	font-weight:400;
+	color:#FFFFFF;
+    margin:12px;
+    margin-bottom:2px;
+}
+a{
+    text-decoration:none;
+    cursor:pointer;
+}
+a p{
+    color:rgba(140,237,208,1);
+}
+p.st, p.st-bottom{
+    color:rgba(210,247,236,1);
+}
+a p, p.st, p.st-bottom {
+    font-style:italic;
+    font-size:16px;
+    margin-top:0px;
+}
+a p, p.st-bottom {
+    margin-bottom:12px;
+}
+a p:hover{
+    background-color:rgba(140,237,208,0.3);
+    transition: background-color 0.2s, font-weight 0.2s;
+}
+
+/* overlay */
+
+.overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:rgba(0,0,0,0.8); /* Black background with opacity */
+    z-index: 10; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+    overflow-y: scroll;
+}
+.content {
+    text-align: center;
+	margin-top:40px;
+	margin-bottom:40px;
+	width:60%;
+	margin-left:auto; 
+    margin-right:auto;
+}
+@media only screen and (max-width:1100px){
+	.content {
+		width:90%;
+	}
+}
+img {
+    margin-top: 20px;
+    width: 90%;
+}
+
+/* Artis Vijups 11.b */
