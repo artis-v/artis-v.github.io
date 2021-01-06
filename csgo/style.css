@@ -12,7 +12,7 @@
 
 @media only screen and (max-width:600px){
     html {
-        background: url(pic/bg/bg600.png) no-repeat center center fixed;
+        background: url(pic/bg/bg600.png) no-repeat top center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -21,7 +21,7 @@
 }
 @media only screen and (min-width:601px) and (max-width:1200px){
     html {
-        background: url(pic/bg/bg1200.png) no-repeat center center fixed;
+        background: url(pic/bg/bg1200.png) no-repeat top center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -30,7 +30,7 @@
 }
 @media only screen and (min-width:1201px) and (max-width:1800px){
     html {
-        background: url(pic/bg/bg1800.png) no-repeat center center fixed;
+        background: url(pic/bg/bg1800.png) no-repeat top center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -39,7 +39,7 @@
 }
 @media only screen and (min-width:1801px){
     html {
-        background: url(pic/bg/bg2400.png) no-repeat center center fixed;
+        background: url(pic/bg/bg2400.png) no-repeat top center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -319,6 +319,7 @@ div.itemcontent p {
     margin-top:50px;
     margin-left:70px;
     margin-right:70px;
+    margin-bottom:20px;
 }
 
 @media only screen and (max-width: 500px) {
@@ -326,6 +327,7 @@ div.itemcontent p {
         margin-top:20px;
         margin-left:20px;
         margin-right:20px;
+        margin-bottom:20px;
     }
     .close {
         top:20px;
