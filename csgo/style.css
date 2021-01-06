@@ -1,207 +1,472 @@
-/* font import */
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Open+Sans:wght@400;600&display=swap');
+:root {
+    --blue: #0065A8;
+    --dark: #000B33;
+    --scrolls: #000311;
+    --overlay: rgba(0, 11, 51, 0.95);
+}
 
-/* universal */
 * {
-	padding:0;
-	margin:0;
-	text-decoration:none;
-	list-style:none;
-	box-sizing:border-box;
-	border-collapse:collapse;
-	border:0;
+    margin:0;
+    padding:0;
 }
 
-body {
-	background-image:url("background.png");
-	background-repeat:no-repeat;
-	background-position:center;
-	background-size:cover;
-	background-attachment:fixed;
-	font-family:Open Sans;
+@media only screen and (max-width:600px){
+    html {
+        background: url(pic/bg/bg600.png) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}
+@media only screen and (min-width:601px) and (max-width:1200px){
+    html {
+        background: url(pic/bg/bg1200.png) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}
+@media only screen and (min-width:1201px) and (max-width:1800px){
+    html {
+        background: url(pic/bg/bg1800.png) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}
+@media only screen and (min-width:1801px){
+    html {
+        background: url(pic/bg/bg2400.png) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
 }
 
-.section {
-	padding:100px;
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
-@media (max-width:850px){
-	.section {
-		padding:50px;
-	}
+h1, h1 a {
+    font-family: Audiowide;
+    font-weight: 400;
+    font-size: 28px;
+    color: white;
+    text-decoration: none;
 }
 
-/* navigation */
-nav {
-	height:80px;
-	width:100%;
-	background-color:rgba(1,1,1,0.7);
-	z-index:1;
-}
-
-label.logo {
-	font-size:26px;
-	text-align:center;
-	display:inline-block;
-	line-height:80px;
-	padding:0 100px;
-	padding-right:0px;
-}
-
-nav ul{
-	float:right;
-	margin-right:100px;
-}
-
-nav ul li{
-	display:inline-block;
-	line-height:80px;
-	margin:0 10px;
-}
-
-nav ul li a{
-	color:white;
-	font-size:17px;
-}
-
-a.link {
-	color:white;
-	text-decoration:underline;
-}
-
-a.active,a:hover,label.logo span.accent:hover{
-	color:#aaaaaa;
-}
-
-a:hover,label.logo span.accent:hover{
-	transition:0.5s;
-}
-
-label.logo span.accent:hover{
-	background-color:rgba(255,127,80,0);
-	transition:0.5s;
-}
-
-.checkbtn{
-  font-size:30px;
-  color:white;
-  float:right;
-  line-height:80px !important;
-  margin-right:40px;
-  cursor:pointer;
-  display:none;
-}
-
-#check{
-  display:none;
-}
-
-@media (max-width:850px){
-  label.logo{
-    font-size:30px;
-    padding-left:50px;
-  }
-  .checkbtn{
-    display:block;
-	padding-top:25px;
-  }
-  ul{
-    position:fixed;
-    width:100%;
-    height:100vh;
-    background:rgba(1,1,1,0.5);
-    top:80px;
-    left:-100%;
-    text-align:center;
-    transition:all .5s;
-  }
-  nav ul li{
-    display:block;
-    margin:50px 0;
-    line-height:30px;
-  }
-  nav ul li a{
-    font-size:20px;
-  }
-  a:hover,a.active{
-    color:#aaaaaa;
-  }
-  #check:checked ~ ul{
-    left:0;
-  }
-}
-
-@media (max-width:370px){
-	label.logo{
-		display:none;
-	}
-}
-
-/* text */
-
-h1 {
-	font-size:56px;
-	font-weight:400;
-	color:white;
-	font-family:Audiowide;
-	margin-bottom:10px;
+h1 a:hover {
+    color: var(--blue);
+    transition: color 100ms linear;
 }
 
 h2 {
-	font-size:36px;
-	font-weight:400;
-	color:white;
-	font-family:Audiowide;
-	margin-bottom:10px;
+    font-family: Audiowide;
+    font-weight: 400;
+    font-size: 22px;
+    color: white;
+    padding-top: 15px;
 }
 
 h3 {
-	font-size:22px;
-	font-weight:400;
-	color:white;
-	font-family:Audiowide;
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+    padding-top: 2px;
 }
 
-span.accent {
-	color:white;
-	background-color:coral;
-	font-family:Audiowide;
+p {
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+    display: inline-block;
 }
 
-p, li {
-	color:white;
-	font-size:16px;
-	margin-bottom:10px;
+p.seed {
+    font-size: 12px;
 }
 
-ol, ol li {
-	list-style-type:decimal;
-	list-style:decimal;
+p.simple, p.simplen {
+    display: none;
 }
 
-/* divs */
-
-.teamstats {
-	width:275px;
-	display:inline-block;
-	padding:25px;
-	vertical-align:top;
-	margin:2.5px;
+@media only screen and (max-width: 875px) {
+    p.simple {
+        display: inline-block;
+    }
+    p.full {
+        display: none;
+    }
 }
 
-/* dropdown list (imported code) */
-
-.box {
-	position: relative;
-	display: inline-block;
+@media only screen and (max-width: 500px) {
+    p.simplen {
+        display: inline-block;
+    }
+    p.fulln {
+        display: none;
+    }
 }
 
-.box select {
-	font-family: Open Sans;
-	font-size:16px;
-	color:white;
-	outline:none;
-	background-color:rgba(1,1,1,0.7);
+@media only screen and (max-width: 375px) {
+    p.seed {
+        display: none;
+    }
+}
+
+label {
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+}
+
+section {
+    padding-top: 20px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+div.scores, div.news {
+    margin-bottom: 40px;
+}
+
+/* span and div */
+
+div.time, div.teams, a.button {
+    padding: 5px;
+    text-align: center;
+    height: 20px;
+    line-height: 20px;
+    display: inline-block;
+}
+
+div.time {
+    width: 60px;
+    border-radius: 20px;
+    border: 2px solid var(--blue);
+}
+
+a.button {
+    padding: 5px 12px;
+    text-decoration: none;
+    border-radius: 20px;
+    border: 2px solid var(--dark);
+    background-color: var(--dark);
+}
+
+a.button:hover {
+    transition:border 100ms linear, background 100ms linear;
+    border: 2px solid var(--blue);
+    background-color: var(--blue);
+}
+
+div.fixture {
+    padding: 5px 0px;
+}
+
+div.scores {
+    width: 70%;
+    float: left;
+}
+
+div.news {
+    margin-left: 70%;
+}
+
+div.box {
+    background-color:var(--dark);
+    border-radius:20px;
+}
+
+div.item {
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width:100%;
+    height:200px;
+    border-radius:20px;
+    margin-bottom:15px;
+}
+
+div.wrap {
+    height: 200px;
+    width: 100%;
+    border-radius:20px;
+    margin-bottom:15px;
+    overflow: hidden;
+    position: relative;
+    cursor:pointer;
+}
+
+div.wrap > div {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    -moz-transition: all 100ms ease-out;
+    -webkit-transition: all 100ms ease-out;
+    transition: all 100ms ease-out;
+    -moz-transform: scale(1,1);
+    -webkit-transform: scale(1,1);
+    transform: scale(1,1);
+    background-image: url('http://pimg.tradeindia.com/00288122/b/0/Our-Valuable-Client-List-Click-on-Image-.jpg');
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    z-index: -1;
+}
+
+div.wrap:hover > div {
+    -moz-transform: scale(1.2,1.2);
+    -webkit-transform: scale(1.2,1.2);
+    transform: scale(1.2,1.2);    
+}
+
+div.itemcontent {
+    width:100%;
+    height:100%;
+    position:relative;
+    border-radius:20px;
+    background: linear-gradient(to bottom, transparent, transparent, var(--dark));
+}
+
+div.itemcontent p {
+    position:absolute;
+    text-align:center;
+    padding:20px 10px;
+    bottom:0;
+    right:0;
+    width:calc(100% - 20px);
+}
+
+@media only screen and (max-width: 1000px) {
+    section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    div.scores {
+        float: none;
+        width: 100%;
+    }
+    div.news{
+        margin-left:0px;
+    }
+}
+
+/* Overlays */
+
+.close {
+    position: absolute;
+    right: 70px;
+    top: 50px;
+    width: 32px;
+    height: 32px;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.close:hover:before, .close:hover:after {
+    background-color: var(--blue);
+    transition: background 100ms linear;
+}
+
+.close:before, .close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: white;
+}
+
+.close:before {
+    transform: rotate(45deg);
+}
+
+.close:after {
+    transform: rotate(-45deg);
+}
+
+.overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:var(--overlay);
+    z-index: 10; /* Specify a stack order in case you're using a different order for other elements */
+    overflow-x: hidden;
+}
+
+.overlaycontent {
+    margin-top:50px;
+    margin-left:70px;
+    margin-right:70px;
+}
+
+@media only screen and (max-width: 500px) {
+    .overlaycontent {
+        margin-top:20px;
+        margin-left:20px;
+        margin-right:20px;
+    }
+    .close {
+        top:20px;
+        right:20px;
+    }
+}
+
+/* Segmented controls */
+
+.toggle-radio > input + label {
+    background: var(--dark);
+    height:20px;
+    line-height:20px;
+    text-align:center;
+    margin-bottom:0;
+    display:flex;
+    padding:5px 12px;
+    cursor:pointer;
+    align-items:center;
+    float:left;
+    border-radius:20px;
+    border-width:1px 0 1px 1px;
+}
+
+.toggle-radio > input:checked + label {
+    background: var(--blue);
+}
+
+.toggle-radio {
+    display:inline-block; 
+    vertical-align:middle;
+}
+
+.toggle-radio > input[type='radio'] {
+    display:none;
 }
 
 
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 15px;
+    background: var(--scrolls);
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--dark); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--blue);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+	background: var(--dark); 
+}
+
+/* Table */
+
+div.match {
+    width: 30%;
+    display: inline-block;
+}
+
+table {
+    margin-top: 10px;
+    font-family: Rubik;
+    color: white;
+    background-color: var(--scrolls);
+    font-size: 16px;
+    border-collapse: collapse;
+}
+
+.middle table {    
+    width: 400px;
+    background-color: hsla(235, 25%, 25%, 1);
+    border-collapse: collapse;
+}
+
+.bottom table {
+    width: 100%;
+    background-color: hsla(235, 25%, 25%, 1);
+    border-collapse: collapse;
+}
+
+@media screen and (max-width: 1200px){
+    div.match {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    div.match {
+        width: 100%;
+    }
+    .middle table {
+        width: 100%;
+    }
+    td.hide {
+        display: none;
+    }
+}
+
+td {
+    padding: 5px;
+}
+
+thead tr td.line {
+    cursor: help;
+    text-decoration: underline dotted;
+}
+
+.bold {
+    font-weight: 500;
+}
+
+tr.sf {
+    background-color: var(--blue);
+}
+
+tr.qf {
+    background-color: var(--dark);
+}
+
+tfoot tr {
+    background-color: hsla(0, 100%, 100%, 1);
+    color: hsla(235, 25%, 25%, 1);
+}
+
+tfoot a {
+    color: hsla(235, 25%, 25%, 1);
+    text-decoration: underline;
+    transition: opacity 0.15s ease-in-out;
+}
+
+tfoot a:hover {
+    opacity: 0.7;
+}
