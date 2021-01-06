@@ -91,6 +91,20 @@ p {
     display: inline-block;
 }
 
+div.overlaycontent p {
+    display: block;
+    padding-bottom: 10px;
+}
+
+div.overlaycontent p a {
+    color: var(--white);
+}
+
+div.overlaycontent p a:hover {
+    color: var(--blue);
+    transition: color 100ms linear;
+}
+
 p.seed {
     font-size: 12px;
 }
