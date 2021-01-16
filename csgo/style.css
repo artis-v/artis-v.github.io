@@ -10,25 +10,7 @@
     padding:0;
 }
 
-@media only screen and (max-width:600px){
-    html {
-        background: url(pic/bg/bg600.png) no-repeat top center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-    }
-}
-@media only screen and (min-width:601px) and (max-width:1200px){
-    html {
-        background: url(pic/bg/bg1200.png) no-repeat top center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-    }
-}
-@media only screen and (min-width:1201px) and (max-width:1800px){
+@media only screen and (min-width:1px) and (max-width:1800px){
     html {
         background: url(pic/bg/bg1800.png) no-repeat top center fixed;
         -webkit-background-size: cover;
@@ -47,13 +29,9 @@
     }
 }
 
-@media only screen and (max-device-width: 480px) {
-    html {
-      height: calc(100% + 60px);
-      min-height: calc(100% + 60px);
-    }
+html {
+    min-height: 100vh;
 }
-
 
 html, body {
     margin: 0;
