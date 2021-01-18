@@ -37,6 +37,15 @@
             </div>
             <div class="upcoming" id="upcomingDiv">
                 <h2>Klasifikācija</h2>
+                <h3>18. janvāris</h3>
+                <div class="fixture">
+                    <div class="time"><p>16:00</p></div>
+                    <div class="teams">
+                        <p class="fulln">Čigāni</p><p class="simplen">ČIG</p> 
+                        <p>–</p>
+                        <p class="fulln">Pool Party</p><p class="simplen">PPA</p>
+                    </div>
+                </div>
                 <h3>19. janvāris</h3>
                 <div class="fixture">
                     <div class="time"><p>20:00</p></div>
@@ -55,7 +64,7 @@
                         <p class="fulln">Kubiki</p><p class="simplen">KUB</p>
                     </div>
                 </div>
-                <h3>16. janvāris - 22. janvāris</h3>
+                <h3>18. janvāris - 22. janvāris</h3>
                 <div class="fixture">
                     <div class="time"><p>TBD</p></div>
                     <div class="teams">
@@ -85,23 +94,7 @@
                     <div class="teams">
                         <p class="fulln">Saule</p><p class="simplen">SAU</p> 
                         <p>–</p>
-                        <p class="fulln">Vitjazi</p><p class="simplen">VIT</p>
-                    </div>
-                </div>
-                <div class="fixture">
-                    <div class="time"><p>TBD</p></div>
-                    <div class="teams">
-                        <p class="fulln">Vitjazi</p><p class="simplen">VIT</p> 
-                        <p>–</p>
-                        <p class="fulln">Dullbrieži</p><p class="simplen">DUL</p>
-                    </div>
-                </div>
-                <div class="fixture">
-                    <div class="time"><p>TBD</p></div>
-                    <div class="teams">
-                        <p class="fulln">Čigāni</p><p class="simplen">ČIG</p> 
-                        <p>–</p>
-                        <p class="fulln">Pool Party</p><p class="simplen">PPA</p>
+                        <p class="fulln">Dullbrieži</p><p class="simplen">VIT</p>
                     </div>
                 </div>
             </div>
@@ -160,6 +153,14 @@
         <script src="script.js"></script>
         <div class="news">
             <div class="wrap">
+                <div class="item" style="background-image:url(pic/vitjazi.png);"></div>
+                <a onclick="up('vitj')">
+                    <div class="itemcontent">
+                        <p>Dažas izmaiņas formātā</p>
+                    </div>
+                </a>
+            </div>
+            <div class="wrap">
                 <div class="item" style="background-image:url(pic/fireworks.png);"></div>
                 <a onclick="up('start')">
                     <div class="itemcontent">
@@ -186,6 +187,25 @@
         </div>
     </section>
     <!-- Overlays -->
+    <div class="overlay" id="vitj">
+        <a onclick="down('vitj')" class="close"></a>
+        <div class="overlaycontent">
+            <h1 style="width:calc(100% - 40px); margin-bottom:20px;">Dažas izmaiņas formātā</h1>
+            <p>Pēc divām turnīra dienām vēlamies informēt par izmaiņām turnīra formātā un kalendārā, kā arī klarificēt dažus aktuālus jautājumus.</p>
+            <h1 style="margin-top:10px; width:calc(100% - 40px); margin-bottom:20px;">Izstājas komanda Vitjazi</h1>
+            <p>Aizvakar tikām informēti, ka komanda Vitjazi nav spējīgi savākt sastāvu un plāno izstāties. Šis tika galīgi apstiprināts vakar pēcpusdienā.</p>
+            <p>Līdz ar to, kalendārā mačus <span style="font-weight:500">Saule – Vitjazi</span> un <span style="font-weight:500">Vitjazi – Dullbrieži</span> aizstās mačs <span style="font-weight:500">Saule – Dullbrieži</span>.</p>
+            <p>Tas arī nozīmē, ka ceturtdaļfinālu tagad uzreiz sasniegs nevis 3, bet gan 4 komandas, un astotdaļfinālā piedalīsies nevis 10, bet 8 komandas.</p>
+            <p>Lai Vitjaziem vieglas smiltis!</p>
+            <h1 style="margin-top:10px; width:calc(100% - 40px); margin-bottom:20px;">Par maču Dullbrieži – Karthofel</h1>
+            <p>Vakar vienā no mačiem, Dullbrieži – Karthofel, pie rezultāta 12–14 nocrashoja Fastcup serveris. Diemžēl, Fastcup nav opcija atsākt maču no šāda punkta. Abas komandas savstarpēji piekrita pabeigt maču ar rezultātu 15–15.</p>
+            <p>Mēs ceram, ka šādi incidenti neatkārtosies, taču vēlamies arī klarificēt, ka ar šādām situācijām plānojam rīkoties pēc case-by-case principa, apsverot katra mača spēles situāciju un abu iesaistīto komandu viedokli.</p>
+            <h1 style="margin-top:10px; width:calc(100% - 40px); margin-bottom:20px;">Par Anticheat</h1>
+            <p>Pirms turnīra sākuma mēs uzskatījām, ka neviena no komandām visdrīzāk stingri nepieprasīs aizvadīt mačus ar Anticheat, apzinoties potenciālos uzstādīšanas sarežģījumus, taču pēc viena no vakardienas mačiem uzskatam svarīgu klarificēt:</p>
+            <p>Anticheat ir jābūt ieslēgtam pie jebkuras spēlējošās komandas pieprasījuma. Izņēmumus varam pieņemt tad, ja otra komanda ir spējīga skaidri pierādīt, ka Anticheat izraisa tehniskas problēmas, kas liedz spēlētājiem piedalīties mačā.</p>
+            <p>Detaļas par Fastcup izmantoto Anticheat var atrast <a href="https://gameguard.ac">Gameguard mājaslapā.</a></p>
+        </div>
+    </div>
     <div class="overlay" id="start">
         <a onclick="down('start')" class="close"></a>
         <div class="overlaycontent">
