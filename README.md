@@ -3,3 +3,4 @@ Pages made by Artis Vijups.
 
 * [Informātika (interneta resursi)](https://artis-v.github.io/informatika/)
 * [S1VSK CS:GO turnīrs](https://artis-v.github.io/csgo/)
+* [Šautriņu punktu skaitītāj](https://artis-v.github.io/darts/)

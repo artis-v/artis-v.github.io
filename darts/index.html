@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Podkova:wght@400;500;600&display=swap" rel="stylesheet">
+        <!-- About -->
+        <title>Darts Scorer</title>
+    </head>
+    <body id="body">
+        <script type="text/javascript" src="script.js"></script>
+        <table cellspacing="0" cellpadding="0" class="player" style="background-color:var(--p1);">
+            <tr>
+                <td class="s" id="circ1"></td>
+                <td class="xl">
+                    <div>
+                        <span class="aver" id="aver1" style="display:none;"></span>
+                        <span class="name" id="name1"></span>
+                        <span class="triangle" id="tria1"></span>
+                    </div>
+                    <div class="info" id="chec1"></div>
+                </td>
+                <td class="m" id="sets1">0</td>
+                <td class="m" id="legs1">0</td>
+                <td class="l" id="poin1">501</td>
+            </tr>
+        </table>
+        <table cellspacing="0" cellpadding="0" class="player" style="background-color:var(--p2);">
+            <tr>
+                <td class="s" id="circ2"></td>
+                <td class="xl">
+                    <div>
+                        <span class="aver" id="aver2" style="display:none;"></span>
+                        <span class="name" id="name2"></span>
+                        <span class="triangle" id="tria2"></span>
+                    </div>
+                    <div class="info" id="chec2"></div>
+                </td>
+                <td class="m" id="sets2">0</td>
+                <td class="m" id="legs2">0</td>
+                <td class="l" id="poin2">501</td>
+            </tr>
+        </table>
+        <table cellspacing="0" cellpadding="0" class="lower">
+            <tr>
+                <td class="s"></td>
+                <td class="xxl" id="low"></td>
+                <td class="l">
+                    <input type="text" id="input" name="input" align="middle" placeholder="Input" autofocus/>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

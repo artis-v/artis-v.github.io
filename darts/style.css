@@ -1,0 +1,143 @@
+:root {
+    --p1: #111111;
+    --p2: #0C0C0C;
+    --bc: calc(100vh / 9 * 4);
+    --sc: calc(100vh / 9);
+    --gold: #FFB900;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Podkova', serif;
+    color: white;
+}
+
+body {
+    background-color: black;
+}
+
+table {
+    border: 0;
+}
+
+table.player {
+    height: var(--bc);
+    width: 100vw;
+    text-align: center;
+}
+
+td.s {
+    width: 5vw;
+    font-size: 3vw;
+}
+
+td.m {
+    width: 10vw;
+    font-size: 7vw;
+}
+
+td.l {
+    width: 20vw;
+    font-size: 10vw;
+}
+
+td.xl {
+    text-align: left;
+    width: 30vw;
+}
+
+td.xl div span.name {
+    font-size: 7vw;
+}
+
+td.xl div span.triangle {
+    padding: 0 0 0 1vw;
+    vertical-align: text-bottom;
+    font-size: 3vw;
+    animation: blinker 1.2s ease-out infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+       opacity: 0;
+    }
+}
+
+td.xl div span.aver {
+    padding: 0 1vw 0 0;
+    font-size: 3vw;
+}
+
+td.xl div.info {
+    font-size: 5vw;
+    color: lightgreen;
+}
+
+td.xxl {
+    font-size: 3vw;
+    width: 50vw;
+}
+
+table.lower {
+    height: var(--sc);
+    width: 100vw;
+}
+
+/* input */
+
+input {
+    float: right;
+    height: var(--sc);
+    width: 100%;
+    text-align: center;
+    border: 0;
+    background: black;
+    font-size: 3vw;
+    caret-color: lightgreen;
+}
+
+input::-webkit-input-placeholder {
+    color: #999;
+}
+input:focus::-webkit-input-placeholder {
+    color: lightgreen;
+}
+
+/* Firefox < 19 */
+input:-moz-placeholder {
+    color: #999;
+}
+input:focus:-moz-placeholder {
+    color: lightgreen;
+}
+
+/* Firefox > 19 */
+input::-moz-placeholder {
+    color: #999;
+}
+input:focus::-moz-placeholder {
+    color: lightgreen;
+}
+
+/* Internet Explorer 10 */
+input:-ms-input-placeholder {
+    color: #999;
+}
+input:focus:-ms-input-placeholder {
+    color: lightgreen;
+}
+
+input:focus {
+    outline: 0;
+    color: white;
+}
