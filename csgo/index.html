@@ -36,21 +36,53 @@
                 <label for="results">Rezultāti</label>
             </div>
             <div class="upcoming" id="upcomingDiv">
+                <h2>Astotdaļfināli</h2>
+                <h3>23. janvāris – 27. janvāris</h3>
+                <div class="fixture">
+                    <div class="time"><p>TBD</p></div>
+                    <div class="teams">
+                        <p class="seed">(5)</p> <p class="fulln">SEcS</p><p class="simplen">SEC</p> 
+                        <p>–</p>
+                        <p class="fulln">Cita Šķirne</p><p class="simplen">CŠĶ</p> <p class="seed">(12)</p>
+                    </div>
+                </div>
+                <div class="fixture">
+                    <div class="time"><p>TBD</p></div>
+                    <div class="teams">
+                        <p class="seed">(6)</p> <p class="fulln">Pool Party</p><p class="simplen">PPA</p> 
+                        <p>–</p>
+                        <p class="fulln">Kubiki</p><p class="simplen">KUB</p> <p class="seed">(11)</p>
+                    </div>
+                </div>
+                <div class="fixture">
+                    <div class="time"><p>TBD</p></div>
+                    <div class="teams">
+                        <p class="seed">(7)</p> <p class="fulln">Tr1peris</p><p class="simplen">TR1</p> 
+                        <p>–</p>
+                        <p class="fulln">Čigāni</p><p class="simplen">ČIG</p> <p class="seed">(10)</p>
+                    </div>
+                </div>
+                <div class="fixture">
+                    <div class="time"><p>TBD</p></div>
+                    <div class="teams">
+                        <p class="seed">(8)</p> <p class="fulln">MLG</p><p class="simplen">MLG</p> 
+                        <p>–</p>
+                        <p class="fulln">Dullbrieži</p><p class="simplen">DUL</p> <p class="seed">(9)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="results" id="resultsDiv" style="display:none;">
                 <h2>Klasifikācija</h2>
                 <h3>22. janvāris</h3>
                 <div class="fixture">
                     <div class="time"><p>19:00</p></div>
                     <div class="teams">
                         <p class="fulln">Cita Šķirne</p><p class="simplen">CŠĶ</p> 
-                        <p>–</p>
+                        <p>1–16</p>
                         <p class="fulln">SEcS</p><p class="simplen">SEC</p>
                     </div>
-                    <a class="button" href="steam://connect/185.2.28.25:27020"><p class="full">▶ GOTV</p><p class="simple">▶</p></a>
                     <a class="button" href="https://csgo.fastcup.net/match4049999"><p class="full">⚙ Fastcup</p><p class="simple">⚙</p></a>
                 </div>
-            </div>
-            <div class="results" id="resultsDiv" style="display:none;">
-                <h2>Klasifikācija</h2>
                 <h3>21. janvāris</h3>
                 <div class="fixture">
                     <div class="time"><p>18:00</p></div>
@@ -165,7 +197,15 @@
                 <div class="item" style="background-image:url(pic/fireworks.png);"></div>
                 <a onclick="up('start')">
                     <div class="itemcontent">
-                        <p>Ar klasifikāciju sākas S1VSK CS:GO!</p>
+                        <p>Noslēdzas klasifikācija un sākas izslēgšanas turnīrs</p>
+                    </div>
+                </a>
+            </div>
+            <div class="wrap">
+                <div class="item" style="background-image:url(pic/pencil.png);"></div>
+                <a onclick="up('pencil')">
+                    <div class="itemcontent">
+                        <p>Instrukcijas kapteiņiem priekš izslēgšanas turnīra</p>
                     </div>
                 </a>
             </div>
@@ -188,30 +228,151 @@
         </div>
     </section>
     <!-- Overlays -->
+    <div class="overlay" id="pencil">
+        <a onclick="down('pencil')" class="close"></a>
+        <div class="overlaycontent">
+            <h1 style="width:calc(100% - 40px); margin-bottom:20px;">Instrukcijas kapteiņiem priekš izslēgšanas turnīra</h1>
+            <p>Tāpat kā klasifikācijā, maču datumus sarunā abu iesaistīto komandu kapteiņi, taču šoreiz ir papildus norādījumi:</p>
+            <p>• Mača sākuma laikam ir jābūt vai nu <span style="font-weight:500">16:00</span>, vai arī <span style="font-weight:500">20:00</span>.</p>
+            <p>• Izslēgšanas turnīrā divi mači nedrīkst noritēt vienlaikus.</p>
+            <p>• Par savu izvēlēto mača datumu/laiku ir jāpaziņo vismaz dienu iepriekš.</p>
+            <p>Šie norādījumi ir ieviesti tāpēc, ka plānots katru maču straumēt <a href="https://www.youtube.com/user/arturssablis">YouTube</a>. Līdz ar to ir augstākas iespējas, ka mums nāksies atteikt jūsu piedāvāto mača datumu un laiku.</p>
+            <p>Tā kā plānojam mačus straumēt, ja izveidojas situācija, kurā jums neizdotos piedalīties mačā sarunātajā laikā, par to vajadzētu ziņot vismaz 15 minūtes pirms mača plānotā sākuma.</p>
+            <p>Izslēgšanas turnīrā kādu komandu drīkst pārstāvēt tikai spēlētāji, kas tika pieteikti turnīram šīs komandas sastāvā un/vai ir spēlējuši kādā no klasifikācijas spēlēm šīs komandas sastāvā.</p>
+            <h1 style="margin-top:10px; width:calc(100% - 40px); margin-bottom:20px;">Fastcup instrukcijas</h1>
+            <p>Šajā kārtā ir nelielas izmaiņas Fastcup maču veidošanā. Vēlamies izcelt, ka šajā kārtā jebkādas deviācijas no šīm instrukcijām noteikti izraisītu pieprasījumu pārtaisīt maču.</p>
+            <p>• Best of: <span style="font-weight:500">3</span></p>
+            <p>• Map selection: <span style="font-weight:500">Ban / Pick / Ban / Decider</span></p>
+            <p>• Map pool: <span style="font-weight:500">Default (5x5 matchmaking)</span></p>
+            <p>• Region: <span style="font-weight:500">Stockholm</span></p>
+            <p>• Mode: <span style="font-weight:500">5v5</span></p>
+            <p>• Password: <span style="font-weight:500">ir jābūt.</span> Ar paroli dalīties ar pretinieku komandas kapteini.  Komandu kapteiņiem nepieciešams paroli padot tālāk spēlētājiem.</p>
+            <p>• Anticheat: izslēgts, izņemot, ja jebkura no komandām pieprasa, lai tas būtu ieslēgts.</p>
+            <p>• Team names: <span style="font-weight:500">ir jābūt norādītiem.</span> Komandu nosaukumus jāraksta all-caps bez garumzīmēm (piemēram, Dullbrieži → DULLBRIEZI).</p>
+            <p>• GOTV: bez parolēm.</p>
+            <p>Piezīme: daži dalībnieki ir saskārušies ar problēmām <a href="https://gameguard.ac">Gameguard Anticheat</a> uzstādīšanā. Šādās situācijās iesakām sazināties ar mums, esam gatavi palīdzēt.</p>
+        </div>
+    </div>
     <div class="overlay" id="start">
         <a onclick="down('start')" class="close"></a>
         <div class="overlaycontent">
-            <h1 style="width:calc(100% - 40px); margin-bottom:20px;">Ar klasifikāciju sākas S1VSK CS:GO!</h1>
-            <p>79 spēlētāji no 13 komandām ar klasifikāciju sāks dalību S1VSK CS:GO otrajā turnīrā!</p>
-            <h1 style="margin-top:10px; width:calc(100% - 40px); margin-bottom:20px;">Formāts:</h1>
-            <p>Klasifikācijā katrai komandai jāizspēlē divus BO1 (1 karte) mačus. Katra komanda šobrīd var redzēt savus pretiniekus turnīra sākumlapā.</p>
-            <p>Klasifikācijas beigās visas komandas tiks sakārtotas tabulā pēc uzvaru skaita, tad pēc uzvarēto un zaudēto raundu starpības, tad, ja nepieciešams, pēc komandas average kills per round.</p>
-            <p>Trīs spēcīgākās komandas uzreiz iekļūs ceturtdaļfinālā. Pārejās desmit komandas turnīru turpinās astotdaļfinālā.</p>
-            <h1 style="margin-top:10px; width:calc(100% - 40px); margin-bottom:20px;">Informācija kapteiņiem:</h1>
-            <p>Maču precīzo datumu un sākuma laiku nepieciešams savstarpēji izlemt abu komandu kapteiņiem. Lūdzu, kontaktējieties savā starpā un uzreiz informējiet organizatorus par jūsu izvēlēto datumu un laiku.</p>
-            <p>Organizatori saglabā tiesības noraidīt jūsu piedāvāto sākuma laiku. Lai no tā izvairītos, informējiet mūs par sākuma laiku savlaicīgi (līdz ar lēmuma pieņemšanu), nevis uzreiz pirms mača sākuma.</p>
-            <p>Mājinieku komandas (tās komandas, kura spēļu sarakstā uzrakstīta kā pirmā) kapteinim līdz ar mača plānoto sākuma laiku nepieciešams izveidot maču platformā <a href="https://csgo.fastcup.net">Fastcup.</a> Obligāti jāizmanto šādi iestatījumi:</p>
-            <p>• Best of: <span style="font-weight:500">1</span></p>
-            <p>• Map selection: <span style="font-weight:500">Ban / Ban / Ban / Decider</span></p>
-            <p>• Map pool: <span style="font-weight:500">Default (5x5 matchmaking)</span></p>
-            <p>• Mode: <span style="font-weight:500">5v5</span></p>
-            <p>• Password: ir jābūt. Ar paroli dalīties ar pretinieku komandas kapteini.  Komandu kapteiņiem nepieciešams paroli padot tālāk spēlētājiem.</p>
-            <p>• Anticheat: pēc izvēles.</p>
-            <p>• Team names: ir jābūt norādītiem. Komandu nosaukumus ieteicams rakstīt all-caps bez garumzīmēm (piemēram, Dullbrieži → DULLBRIEZI).</p>
-            <p>Mača linku nepieciešams nosūtīt turnīra Discord serverī.</p>
-            <h1 style="margin-top:10px; width:calc(100% - 40px); margin-bottom:20px;">Informācija līdzjutējiem:</h1>
-            <p>Klasifikāciju straumēt YouTube vai Twitch nav plānots. Tiešraides sāksim no astotdaļfināliem.</p>
-            <p>Taču, ja ir instalēts CS:GO, ir iespējams skatīties mačus caur GOTV. GOTV adrese būs pieejama mača Fastcup linkā, ar kuru komandu kapteiņi padalīsies turnīra <a href="https://discord.gg/duRTpMb">Discord serverī.</a> Fastcup linku varēs arī atrast šajā mājaslapā līdz ar mača sākumu.</p>
+            <h1 style="width:calc(100% - 40px); margin-bottom:20px;">Noslēdzas klasifikācija un sākas izslēgšanas turnīrs</h1>
+            <p>Pēc 12 BO1 mačiem noslēgusies klasifikācija. Klasifikācijas tabula:</p>
+            <table style="margin-bottom:20px;">
+            <thead>
+                <tr>
+                    <td>#</td>
+                    <td>Komanda</td>
+                    <td class="bold line" title="Uzvaras, zaudējumi, neizšķirti">U-Z-N</td>
+                    <td class="hide line" title="Uzvarētie raundi">UR</td>
+                    <td class="hide line" title="Zaudētie raundi">ZR</td>
+                    <td>Raundi</td>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+            <tr class="sf">
+                <td>1.</td>
+                <td>Teicamnieki</td>
+                <td class="bold">2-0</td>
+                <td class="hide">32</td>
+                <td class="hide">11</td>
+                <td>+21</td>
+            </tr>
+            <tr class="sf">
+                <td>2.</td>
+                <td>Arbaleti</td>
+                <td class="bold">2-0</td>
+                <td class="hide">32</td>
+                <td class="hide">11</td>
+                <td>+21</td>
+            </tr>
+            <tr class="sf">
+                <td>3.</td>
+                <td>Saule</td>
+                <td class="bold">2-0</td>
+                <td class="hide">32</td>
+                <td class="hide">17</td>
+                <td>+15</td>
+            </tr>
+            <tr class="sf">
+                <td>4.</td>
+                <td>Karthofel</td>
+                <td class="bold">1-0-1</td>
+                <td class="hide">31</td>
+                <td class="hide">29</td>
+                <td>+2</td>
+            </tr>
+            <tr>
+                <td>5.</td>
+                <td>SEcS</td>
+                <td class="bold">1-1</td>
+                <td class="hide">25</td>
+                <td class="hide">17</td>
+                <td>+8</td>
+            </tr>
+            <tr>
+                <td>6.</td>
+                <td>Pool Party</td>
+                <td class="bold">1-1</td>
+                <td class="hide">24</td>
+                <td class="hide">25</td>
+                <td>-1</td>
+            </tr>
+            <tr>
+                <td>7.</td>
+                <td>Tr1peris</td>
+                <td class="bold">1-1</td>
+                <td class="hide">23</td>
+                <td class="hide">28</td>
+                <td>-5</td>
+            </tr>
+            <tr>
+                <td>8.</td>
+                <td>MLG</td>
+                <td class="bold">1-1</td>
+                <td class="hide">20</td>
+                <td class="hide">30</td>
+                <td>-10</td>
+            </tr>
+            <tr>
+                <td>9.</td>
+                <td>Dullbrieži</td>
+                <td class="bold">0-1-1</td>
+                <td class="hide">23</td>
+                <td class="hide">31</td>
+                <td>-8</td>
+            </tr>
+            <tr>
+                <td>10.</td>
+                <td>Čigāni</td>
+                <td class="bold">0-2</td>
+                <td class="hide">23</td>
+                <td class="hide">32</td>
+                <td>-9</td>
+            </tr>
+            <tr>
+                <td>11.</td>
+                <td>Kubiki</td>
+                <td class="bold">0-2</td>
+                <td class="hide">17</td>
+                <td class="hide">32</td>
+                <td>-15</td>
+            </tr>
+            <tr>
+                <td>12.</td>
+                <td>Cita šķirne</td>
+                <td class="bold">0-2</td>
+                <td class="hide">13</td>
+                <td class="hide">32</td>
+                <td>-19</td>
+            </tr>
+            </tbody>
+            </table>
+            <p>(Neizšķirts starp TEI un ARB lauzts pēc average kills per round: TEI 4.326, ARB 4.302.)</p>
+            <p>Četras sekmīgākās komandas izlaidīs astotdaļfinālu un sāks izslēgšanas turnīru ceturtdaļfinālā. Pārējās astoņas komandas izslēgšanas turnīru ievadīs astotdaļfinālā.</p>
+            <p>Astotdaļfināli ritēs no 23. janvāra līdz 27. janvārim; astotdaļfinālu maču sarakstu var atrast sākumlapā.</p>
+            <p>Ceturtdaļfināli notiks no 28. janvāra.</p>
+            <p>Visus izslēgšanas turnīra mačus plānojam straumēt <a href="https://www.youtube.com/user/arturssablis">YouTube.</a></p>
         </div>
     </div>
     <div class="overlay" id="links">
